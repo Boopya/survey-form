@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FCC: Survey Form</title>
+        <link rel="stylesheet" type ="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <h1 id="title" class="text-center">Hacker Survey Form</h1>
+                <p id="description" class="text-center">The best time to start is now.</p>
+            </header>
+            <!-- Survey Form -->
+            <form id="survey-form">
+                <!-- Name -->
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" class="form-control" type="text" placeholder="Enter your name" required>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" class="form-control" type="email" placeholder="Enter your email" required>
+                </div>
+                <!-- Age -->
+                <div class="form-group">
+                    <label id="number-label" for="number">Age</label>
+                    <input id="number" class="form-control" type="number" min="10" max="99" placeholder="Enter your age">
+                </div>
+                <!-- Role -->
+                <div class="form-group">
+                    <label for="dropdown">Which option best describes your current role?</label>
+                    <br>
+                    <select id="dropdown" class="form-control">
+                        <option disabled selected>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="ftimejob">Full Time Job</option>
+                        <option value="ftimelearner">Full Time Learner</option>
+                        <option value="not">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Recommendation -->
+                <div class="form-group">
+                    <label>Would you recommend hacking to a friend?</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="recommendation" value="definitely">Definitely
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="recommendation" value="maybe">Maybe
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="recommendation" value="not-sure">Not Sure
+                    </label>
+                </div>
+                <!-- Favorite Feature -->
+                <div class="form-group">
+                    <label>What is your favorite thing in hacking?</label>
+                    <br>
+                    <select class="form-control">
+                        <option disabled selected>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+                <!-- Improvement -->
+                <div class="form-group">
+                    <label>What are your other specialization areas? (Check all that apply)</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="front-end-projects">Front-end Projects
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="back-end-projects">Back-end Projects
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="data-visualization">Data Visualization
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="challenges">Challenges
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="open-source">Open Source Community
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="gitter">Gitter help rooms
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="videos">Videos
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="city-meetups">City Meetups
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="wiki">Wiki
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="forum">Forum
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="improvement" value="courses">Additional Courses
+                    </label>
+                </div>
+                <!-- Comments or Suggestions -->
+                <div class="form-group">
+                    <label for="comments">Any comments or suggestions?</label>
+                    <br>
+                    <textarea id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <!-- Submit -->
+                <div class="form-group">
+                    <button id="submit" class ="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
